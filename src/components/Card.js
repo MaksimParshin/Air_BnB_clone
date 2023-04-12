@@ -1,4 +1,4 @@
-
+import star from "../images/Star.svg";
 
 
 export default function Card(props) {
@@ -13,7 +13,7 @@ export default function Card(props) {
       {badgeText && <h1 className="card__title">{badgeText}</h1>}
       <img className="card__img" src={`../images/${props.coverImg}`}></img>
       <div className="card__raiting">
-        <img className="card__raiting-star" src="./images/star.svg"></img>
+        <img className="card__raiting-star" src={star}></img>
         <span>{props.raiting}</span>
         <span>({props.reviewCount})&#183;</span>
         <span>{props.location}</span>
